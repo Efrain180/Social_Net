@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'The wall',
+      title: 'Shine_SocialMedia',
       debugShowCheckedModeBanner: false,
       home: AuthPage(),
     );

@@ -59,6 +59,7 @@ INJECTED from C:\Users\garci\OneDrive\Documentos\shine_socialnet\android\app\src
 INJECTED from C:\Users\garci\OneDrive\Documentos\shine_socialnet\android\app\src\main\AndroidManifest.xml:1:1-34:12
 INJECTED from C:\Users\garci\OneDrive\Documentos\shine_socialnet\android\app\src\main\AndroidManifest.xml:1:1-34:12
 MERGED from C:\Users\garci\OneDrive\Documentos\shine_socialnet\android\app\src\main\AndroidManifest.xml:1:1-34:12
+MERGED from [:shared_preferences_android] C:\Users\garci\OneDrive\Documentos\shine_socialnet\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:firebase_auth] C:\Users\garci\OneDrive\Documentos\shine_socialnet\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_storage] C:\Users\garci\OneDrive\Documentos\shine_socialnet\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:cloud_firestore] C:\Users\garci\OneDrive\Documentos\shine_socialnet\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
@@ -91,9 +92,9 @@ MERGED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\garc
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\garci\.gradle\caches\transforms-3\392bc883a371b75d457d91422b1fe39d\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.7.2] C:\Users\garci\.gradle\caches\transforms-3\b47d4416b2ac22b7a1a850d5b0b4866d\transformed\jetified-activity-1.7.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\garci\.gradle\caches\transforms-3\e513becce0ce1f99f210041696e5e24e\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.browser:browser:1.4.0] C:\Users\garci\.gradle\caches\transforms-3\162e57b214e200a6207c40330426bda2\transformed\browser-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\garci\.gradle\caches\transforms-3\b709b14b30b77c7fc5e44265a8079b79\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\garci\.gradle\caches\transforms-3\fa8aad42c825af1f34f93ab9a34c8ecb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\garci\.gradle\caches\transforms-3\162e57b214e200a6207c40330426bda2\transformed\browser-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.10.1] C:\Users\garci\.gradle\caches\transforms-3\52094026b8e153050982416164376f68\transformed\jetified-core-ktx-1.10.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\garci\.gradle\caches\transforms-3\76cf62c1b1b3420373c956d9e4a7a284\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.10.1] C:\Users\garci\.gradle\caches\transforms-3\c66a84034fdee472d77a2fc15f5cce5d\transformed\core-1.10.1\AndroidManifest.xml:17:1-30:12
@@ -136,6 +137,8 @@ uses-sdk
 INJECTED from C:\Users\garci\OneDrive\Documentos\shine_socialnet\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\garci\OneDrive\Documentos\shine_socialnet\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\garci\OneDrive\Documentos\shine_socialnet\android\app\src\main\AndroidManifest.xml
+MERGED from [:shared_preferences_android] C:\Users\garci\OneDrive\Documentos\shine_socialnet\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:shared_preferences_android] C:\Users\garci\OneDrive\Documentos\shine_socialnet\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_auth] C:\Users\garci\OneDrive\Documentos\shine_socialnet\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_auth] C:\Users\garci\OneDrive\Documentos\shine_socialnet\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_storage] C:\Users\garci\OneDrive\Documentos\shine_socialnet\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
@@ -200,12 +203,12 @@ MERGED from [androidx.activity:activity:1.7.2] C:\Users\garci\.gradle\caches\tra
 MERGED from [androidx.activity:activity:1.7.2] C:\Users\garci\.gradle\caches\transforms-3\b47d4416b2ac22b7a1a850d5b0b4866d\transformed\jetified-activity-1.7.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\garci\.gradle\caches\transforms-3\e513becce0ce1f99f210041696e5e24e\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\garci\.gradle\caches\transforms-3\e513becce0ce1f99f210041696e5e24e\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.browser:browser:1.4.0] C:\Users\garci\.gradle\caches\transforms-3\162e57b214e200a6207c40330426bda2\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.4.0] C:\Users\garci\.gradle\caches\transforms-3\162e57b214e200a6207c40330426bda2\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\garci\.gradle\caches\transforms-3\b709b14b30b77c7fc5e44265a8079b79\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\garci\.gradle\caches\transforms-3\b709b14b30b77c7fc5e44265a8079b79\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\garci\.gradle\caches\transforms-3\fa8aad42c825af1f34f93ab9a34c8ecb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\garci\.gradle\caches\transforms-3\fa8aad42c825af1f34f93ab9a34c8ecb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\garci\.gradle\caches\transforms-3\162e57b214e200a6207c40330426bda2\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\garci\.gradle\caches\transforms-3\162e57b214e200a6207c40330426bda2\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core-ktx:1.10.1] C:\Users\garci\.gradle\caches\transforms-3\52094026b8e153050982416164376f68\transformed\jetified-core-ktx-1.10.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core-ktx:1.10.1] C:\Users\garci\.gradle\caches\transforms-3\52094026b8e153050982416164376f68\transformed\jetified-core-ktx-1.10.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\garci\.gradle\caches\transforms-3\76cf62c1b1b3420373c956d9e4a7a284\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44

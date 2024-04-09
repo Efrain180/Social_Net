@@ -4,6 +4,19 @@
       jars="C:\Users\garci\OneDrive\Documentos\shine_socialnet\build\app\intermediates\flutter\release\libs.jar"
       resolved="__local_aars__:C:\Users\garci\OneDrive\Documentos\shine_socialnet\build\app\intermediates\flutter\release\libs.jar:unspecified"/>
   <library
+      name="C:\Users\garci\OneDrive\Documentos\shine_socialnet\android@@:shared_preferences_android::release"
+      jars="C:\Users\garci\OneDrive\Documentos\shine_socialnet\build\shared_preferences_android\.transforms\2d059e71e692bac92a90a66285d2ad14\transformed\out\jars\classes.jar"
+      resolved="io.flutter.plugins.sharedpreferences:shared_preferences_android:unspecified"
+      folder="C:\Users\garci\OneDrive\Documentos\shine_socialnet\build\shared_preferences_android\.transforms\2d059e71e692bac92a90a66285d2ad14\transformed\out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="C:\Users\garci\OneDrive\Documentos\shine_socialnet\android@@:firebase_auth::release"
       jars="C:\Users\garci\OneDrive\Documentos\shine_socialnet\build\firebase_auth\.transforms\2726ff94366b2e778c11d3d9f164904b\transformed\out\jars\classes.jar"
       resolved="io.flutter.plugins.firebase.auth:firebase_auth:unspecified"
@@ -356,23 +369,6 @@
       jars="C:\Users\garci\.gradle\caches\modules-2\files-2.1\io.flutter\x86_64_release\1.0.0-f40e976bedff57e69e1b3d89a7c2a3c617a03dad\83e83df69b392937515bb1a80c3dca3dfc897a5b\x86_64_release-1.0.0-f40e976bedff57e69e1b3d89a7c2a3c617a03dad.jar"
       resolved="io.flutter:x86_64_release:1.0.0-f40e976bedff57e69e1b3d89a7c2a3c617a03dad"/>
   <library
-      name="androidx.versionedparcelable:versionedparcelable:1.1.1@aar"
-      jars="C:\Users\garci\.gradle\caches\transforms-3\dec4873f746490e203b726d7090bd4b8\transformed\versionedparcelable-1.1.1\jars\classes.jar"
-      resolved="androidx.versionedparcelable:versionedparcelable:1.1.1"
-      folder="C:\Users\garci\.gradle\caches\transforms-3\dec4873f746490e203b726d7090bd4b8\transformed\versionedparcelable-1.1.1"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="androidx.collection:collection:1.1.0@jar"
-      jars="C:\Users\garci\.gradle\caches\modules-2\files-2.1\androidx.collection\collection\1.1.0\1f27220b47669781457de0d600849a5de0e89909\collection-1.1.0.jar"
-      resolved="androidx.collection:collection:1.1.0"/>
-  <library
       name="androidx.arch.core:core-runtime:2.2.0@aar"
       jars="C:\Users\garci\.gradle\caches\transforms-3\b7989db408e59e601567a8e3e4f2bf8d\transformed\core-runtime-2.2.0\jars\classes.jar"
       resolved="androidx.arch.core:core-runtime:2.2.0"
@@ -389,6 +385,23 @@
       name="androidx.arch.core:core-common:2.2.0@jar"
       jars="C:\Users\garci\.gradle\caches\modules-2\files-2.1\androidx.arch.core\core-common\2.2.0\5e1b8b81dfd5f52c56a8d53b18ca759c19a301f3\core-common-2.2.0.jar"
       resolved="androidx.arch.core:core-common:2.2.0"/>
+  <library
+      name="androidx.versionedparcelable:versionedparcelable:1.1.1@aar"
+      jars="C:\Users\garci\.gradle\caches\transforms-3\dec4873f746490e203b726d7090bd4b8\transformed\versionedparcelable-1.1.1\jars\classes.jar"
+      resolved="androidx.versionedparcelable:versionedparcelable:1.1.1"
+      folder="C:\Users\garci\.gradle\caches\transforms-3\dec4873f746490e203b726d7090bd4b8\transformed\versionedparcelable-1.1.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.collection:collection:1.1.0@jar"
+      jars="C:\Users\garci\.gradle\caches\modules-2\files-2.1\androidx.collection\collection\1.1.0\1f27220b47669781457de0d600849a5de0e89909\collection-1.1.0.jar"
+      resolved="androidx.collection:collection:1.1.0"/>
   <library
       name="androidx.savedstate:savedstate:1.2.1@aar"
       jars="C:\Users\garci\.gradle\caches\transforms-3\100f2208dfdabee97c8ddb21005bbc52\transformed\jetified-savedstate-1.2.1\jars\classes.jar"

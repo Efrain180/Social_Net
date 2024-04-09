@@ -53,5 +53,5 @@ o/b$b.class
 o/b.class
 o/c$a.class
 o/c.class
-p3/b.class
+q3/b.class
 u2/d.class

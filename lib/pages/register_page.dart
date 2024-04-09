@@ -30,8 +30,8 @@ class _RegisterPageState extends State<RegisterPage> {
     if (passwordController.text != confirmPasswordController.text) {
       //show error message, passwords dont match
       showErrorMessage(
-          errorTitle: 'Passwords dont match!',
-          errorMessage: 'Please try again!');
+          errorTitle: 'La contraseña no coincide!',
+          errorMessage: 'Porfavor intentalo de nuevo!');
       return;
     }
 
@@ -63,7 +63,7 @@ class _RegisterPageState extends State<RegisterPage> {
       // //WRONG EMAIL OR PASSWORD
       showErrorMessage(
           errorTitle: e.code,
-          errorMessage: 'Please enter a valid email address and password.');
+          errorMessage: 'Por favor introduzca una dirección de correo electrónico y una contraseña válidas.');
       return;
     }
   }
@@ -112,7 +112,7 @@ class _RegisterPageState extends State<RegisterPage> {
             MyTextField(
               controller: emailController,
               obscureText: false,
-              hintText: 'Email',
+              hintText: 'Correo',
             ),
             const SizedBox(height: 10),
 
@@ -120,7 +120,7 @@ class _RegisterPageState extends State<RegisterPage> {
             MyTextField(
               controller: passwordController,
               obscureText: true,
-              hintText: 'Password',
+              hintText: 'Contraeña',
             ),
             const SizedBox(height: 10),
 
@@ -128,13 +128,13 @@ class _RegisterPageState extends State<RegisterPage> {
             MyTextField(
               controller: confirmPasswordController,
               obscureText: true,
-              hintText: 'Confirm Password',
+              hintText: 'Confirmar contraseña',
             ),
             const SizedBox(height: 50),
 
             //sign in buttton
             MyButton(
-              text: 'Sign up',
+              text: 'Iniciar sesion',
               onTap: signUserUp,
             ),
             const SizedBox(height: 50),
@@ -190,7 +190,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 GestureDetector(
                   onTap: widget.onTap,
                   child: const Text(
-                    'Login NOW',
+                    'Iniciar sesion ahora',
                     style: TextStyle(
                         color: Colors.green, fontWeight: FontWeight.bold),
                   ),

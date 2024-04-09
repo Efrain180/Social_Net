@@ -50,13 +50,13 @@ class _LoginPageState extends State<LoginPage> {
         return AlertDialog(
           title: Text(message),
           content:
-              const Text('Please enter a valid email address and password.'),
+              const Text('Porfavor ingresa un correo o una contraseña valida'),
           actions: [
             TextButton(
               onPressed: () {
                 Navigator.of(context).pop(); // Close the alert dialog
               },
-              child: const Text('Close'),
+              child: const Text('Cerrar'),
             ),
           ],
         );
@@ -87,7 +87,7 @@ class _LoginPageState extends State<LoginPage> {
             MyTextField(
               controller: emailController,
               obscureText: false,
-              hintText: 'Email',
+              hintText: 'Correo',
             ),
             const SizedBox(height: 10),
 
@@ -95,7 +95,7 @@ class _LoginPageState extends State<LoginPage> {
             MyTextField(
               controller: passwordController,
               obscureText: true,
-              hintText: 'Password',
+              hintText: 'Contraseña',
             ),
             const SizedBox(height: 10),
 

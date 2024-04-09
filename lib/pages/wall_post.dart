@@ -1,6 +1,6 @@
+import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
 import 'package:the_wall/components/lile_buton.dart';
 import 'package:the_wall/components/comment_button.dart';
 import 'package:the_wall/components/comments.dart';
@@ -34,7 +34,6 @@ class _WallPostState extends State<WallPost> {
   final commentController = TextEditingController();
   final currentUser = FirebaseAuth.instance.currentUser!;
   bool isLiked = false;
-  
 
   @override
   void initState() {
@@ -82,7 +81,6 @@ class _WallPostState extends State<WallPost> {
       ),
     );
   }
-  
 
   void toggleLike() {
     setState(() {
@@ -148,124 +146,126 @@ class _WallPostState extends State<WallPost> {
     );
   }
 
-@override
-Widget build(BuildContext context) {
-  return Container(
-    decoration: BoxDecoration(
-      color: Colors.white,
-      borderRadius: BorderRadius.circular(8),
-    ),
-    margin: const EdgeInsets.only(top: 25, right: 25, left: 25),
-    padding: const EdgeInsets.all(25),
-    child: Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            if (widget.user == currentUser.email)
-              DeleteButton(
-                ontap: () {
-                  deletePosts();
-                },
-              ),
-          ],
-        ),
-        const SizedBox(height: 10),
-        if (widget.imageURL.isNotEmpty)
-          Image.network(
-            widget.imageURL,
-            fit: BoxFit.cover,
-            height: 200,
-            errorBuilder: (context, error, stackTrace) {
-              print('Error loading image: $error');
-              return const Text('Error loading image');
-            },
-          ),
-        const SizedBox(height: 10),
-        if (widget.message.isNotEmpty)
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Theme.of(context).cardColor, // Usa el color de tarjeta del tema
+        borderRadius: BorderRadius.circular(8),
+      ),
+      margin: const EdgeInsets.only(top: 25, right: 25, left: 25),
+      padding: const EdgeInsets.all(25),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              Text(widget.message),
-              const SizedBox(height: 10),
-              Row(
-                children: [
-                  Text(
-                    widget.user,
-                    style: TextStyle(color: Colors.grey[500], fontSize: 14),
-                  ),
-                  const SizedBox(width: 4),
-                  Text(
-                    " . ",
-                    style: TextStyle(color: Colors.grey[500], fontSize: 14),
-                  ),
-                  Text(
-                    widget.time,
-                    style: TextStyle(color: Colors.grey[500], fontSize: 14),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 10),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    children: [
-                      LikeButton(
-                        isLiked: isLiked,
-                        onTap: toggleLike,
-                      ),
-                      const SizedBox(width: 4),
-                      Text(
-                        widget.likes.length.toString(),
-                        style: const TextStyle(color: Colors.grey, fontSize: 14),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      CommmentButton(ontap: CommentDialog),
-                      const SizedBox(width: 4),
-                      // Puedes usar el contador real de comentarios aquí
-                      Text("0", style: TextStyle(fontSize: 14)),
-                    ],
-                  ),
-                ],
-              ),
-              const SizedBox(height: 5),
-              StreamBuilder(
-                stream: FirebaseFirestore.instance
-                    .collection("User Posts")
-                    .doc(widget.postId)
-                    .collection("Comment")
-                    .orderBy("CommentTime", descending: true)
-                    .snapshots(),
-                builder: (context, snapshot) {
-                  if (!snapshot.hasData) {
-                    return const Center(
-                      child: CircularProgressIndicator(),
-                    );
-                  }
-                  return ListView(
-                    shrinkWrap: true,
-                    physics: const NeverScrollableScrollPhysics(),
-                    children: snapshot.data!.docs.map((doc) {
-                      final commentData = doc.data() as Map<String, dynamic>;
-                      return Comments(
-                        text: commentData['commentText'],
-                        user: commentData['CommentedBy'],
-                        time: formatDate(commentData['CommentTime']),
-                      );
-                    }).toList(),
-                  );
-                },
-              ),
+              if (widget.user == currentUser.email)
+                DeleteButton(
+                  ontap: () {
+                    deletePosts();
+                  },
+                ),
             ],
           ),
-      ],
-    ),
-  );
-}
-
+          const SizedBox(height: 10),
+          if (widget.imageURL.isNotEmpty)
+            Image.network(
+              widget.imageURL,
+              fit: BoxFit.cover,
+              height: 200,
+              errorBuilder: (context, error, stackTrace) {
+                print('Error loading image: $error');
+                return const Text('Error loading image');
+              },
+            ),
+          const SizedBox(height: 10),
+          if (widget.message.isNotEmpty)
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  widget.message,
+                  style: Theme.of(context).textTheme.bodyText1, // Usa el estilo de texto del tema
+                ),
+                const SizedBox(height: 10),
+                Row(
+                  children: [
+                    Text(
+                      widget.user,
+                      style: TextStyle(color: Colors.grey[500], fontSize: 14),
+                    ),
+                    const SizedBox(width: 4),
+                    Text(
+                      " . ",
+                      style: TextStyle(color: Colors.grey[500], fontSize: 14),
+                    ),
+                    Text(
+                      widget.time,
+                      style: TextStyle(color: Colors.grey[500], fontSize: 14),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 10),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      children: [
+                        LikeButton(
+                          isLiked: isLiked,
+                          onTap: toggleLike,
+                        ),
+                        const SizedBox(width: 4),
+                        Text(
+                          widget.likes.length.toString(),
+                          style: TextStyle(color: Colors.grey, fontSize: 14),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        CommmentButton(ontap: CommentDialog),
+                        const SizedBox(width: 4),
+                        // Puedes usar el contador real de comentarios aquí
+                        Text("0", style: TextStyle(fontSize: 14)),
+                      ],
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 5),
+                StreamBuilder(
+                  stream: FirebaseFirestore.instance
+                      .collection("User Posts")
+                      .doc(widget.postId)
+                      .collection("Comment")
+                      .orderBy("CommentTime", descending: true)
+                      .snapshots(),
+                  builder: (context, snapshot) {
+                    if (!snapshot.hasData) {
+                      return const Center(
+                        child: CircularProgressIndicator(),
+                      );
+                    }
+                    return ListView(
+                      shrinkWrap: true,
+                      physics: const NeverScrollableScrollPhysics(),
+                      children: snapshot.data!.docs.map((doc) {
+                        final commentData = doc.data() as Map<String, dynamic>;
+                        return Comments(
+                          text: commentData['commentText'],
+                          user: commentData['CommentedBy'],
+                          time: formatDate(commentData['CommentTime']),
+                        );
+                      }).toList(),
+                    );
+                  },
+                ),
+              ],
+            ),
+        ],
+      ),
+    );
+  }
 }
